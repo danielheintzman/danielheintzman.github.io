@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#">
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <title>Daniel Heintzman</title>
+  <meta name="description" content="Read the case study on designing Robinhood Collections.">
+  <meta name="Resource-type" content="Document" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Daniel Heintzman" />
+  <meta property="og:description" content="Read the case study on designing Robinhood Collections." />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Daniel Heintzman: Product Designer" />
+  <meta property="og:image" content="https://danielheintzman.com/img/open-graph/open-graph-robinhood.png" />
+  <meta property="og:url" content="https://www.danielheintzman.com/portfolio/robinhood/index.html" />
+  <meta property="og:image:width" content="50" />
+  <meta property="og:image:height" content="50" />
+  <link href="../favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <!-- Google Analytics -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-90367920-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+  <div id="whitescreen"></div>
+  <a href="../index.html" class="back-home-nav" title="Go back to homepage">Daniel Heintzman</a>
+  <header>
+    <img class="icon" src="../static/svg/robinhood-logo.svg" alt="robinhood icon">
+    <h1>Robinhood</h1>
+    <p class="sub">Case Study: Collections</p>
+  </header>
+  <main>
+    <div class="box">
+      <img src="../static/img/robinhood/header.png" alt="Robinhood header image">
+    </div>
+    <article>
+      <h2>Overview</h2>
+      <p>At Robinhood, I had the opportunity to
+        work on a variety of new projects including features before the launch of two new products: Robinhood Crypto and
+        Robinhood's web app.</p>
+      <p>In addition to these new products, one problem area I focused on involved helping the subset of Robinhood
+        customers
+        who sign
+        up to Robinhood but don’t end up investing with the product.</p>
+      <p>In the end, a solution for three key areas of the product was designed to make picking investment
+        opportunities easier
+        to understand, accessible, and more convenient.</p>
+      <h2>Problems uncovered from user research</h2>
+      <p>As with many mobile apps, a portion of Robinhood’s user base is taken up by inactive users. In the
+        months
+        leading up to this project, a study by our user research team was conducted in order to understand the
+        underlying
+        reasons
+        behind why Robinhood new users become inactive. Reading through these findings, I learned when new users are
+        looking
+        to invest, their main hurdle is deciding which stock they should invest in first. There seemed to be two main
+        reasons
+        for this: </p>
+
+      <p>The first reason was that Robinhood lacked the tools necessary for users to discover stocks on their own. When
+        users
+        are first using the product, it is very common for them to say "I don’t know what stocks are available to invest
+        in on the app".</p>
+      <p>
+        The second reason was due to users lacking confidence. With the exception of current and former professional
+        traders,
+        almost all users say they are "not an expert" and don’t feel educated enough to invest for themselves.
+      </p>
+      <h2>Goals</h2>
+      <p>These two problems of stock discovery and user confidence informed the goals for this project. </p>
+      <p>The first goal was to enable new users to easily find different stocks to invest in. The second was to improve
+        education
+        in order to help users feel confident and empowered enough to invest themselves.</p>
+      <h2>Understanding where we’ve been</h2>
+      <p>Previously, work had been done towards helping users discover what stocks are available to invest in on the
+        app. Specifically, in the months leading up to this
+        project,
+        a feature on Robinhood for Web called Collections had been designed.</p>
+      <p>Collections is a feature that helps users discover different investment opportunities by allowing users to
+        search
+        through
+        different curated lists of stocks that relate in some fashion. </p>
+      <p>Prior research regarding Collections on the web product was overall positive with there being many active users
+        of it.
+        On the web product, Collections exist in three locations: on a stock detail, in search, and in a collection list
+        view.</p>
+
+      </article>
+
+    <div class="robinhood-switchbox">
+      <div class="box">
+        <img src="../static/img/robinhood/initial-web-stock-detail.png" alt="Initial Web" id="initial-web" class="shadow">
+      </div>
+      <nav class="link flex justcenter" id="initial-web-link">
+        <a class="rbh-switch-1 active" href="">Stock detail</a>
+        <a class="rbh-switch-1" href="">Search</a>
+        <a class="rbh-switch-1" href="">Collections list</a>
+        <div class="link-line-u"></div>
+      </nav>
+    </div>
+    <article>
+      <p>With this existing design for Collections on the web product, it was decided to not go through an end-to-end
+        design process towards addressing the first user problem of discovery again. Instead, it was decided to
+        introduce discovery to
+        mobile by creating parity with the web product and bring Collections to iOS and Android.</p>
+      <h2>Previous design on mobile</h2>
+      <p>Below shows what the initial design looked like before this project, where both iOS and Android apps did not
+        have Collections yet.</p>
+    </article>
+
+    <div class="robinhood-switchbox">
+      <div class="box flex justcenter">
+        <img class="two" id="prev-mobile-ios" src="../static/img/robinhood/previous-ios-stock-detail.png"
+          alt="Previous iOS">
+        <img class="two" id="prev-mobile-android" src="../static/img/robinhood/previous-android-stock-detail.png"
+          alt="Previous Android">
+      </div>
+      <nav class="link flex justcenter" id="prev-mobile">
+        <a class="rbh-switch-2 active" href="">Stock detail</a>
+        <a class="rbh-switch-2" href="">Search</a>
+        <a class="rbh-switch-2" href="">Collections list</a>
+        <div class="link-line-u"></div>
+      </nav>
+    </div>
+    <article>
+      <h2>Creating parity between web and mobile</h2>
+      <p>The process of designing Collections for both iOS and Android largely consisted of designing different
+        iterations
+        for
+        how the pill-shaped buttons would work on mobile while following design principles from Apple’s iOS Human
+        Interface
+        Guidelines and Google’s Material Design Guidelines.</p>
+    </article>
+    <div class="robinhood-switchbox">
+      <div class="box flex justcenter">
+        <img class="two" id="new-mobile-ios" src="../static/img/robinhood/new-ios-stock-detail.png" alt="New iOS">
+        <img class="two" id="new-mobile-android" src="../static/img/robinhood/new-android-stock-detail.png"
+          alt="New Android">
+      </div>
+      <nav class="link flex justcenter" id="new-mobile">
+        <a class="rbh-switch-3 active" href="">Stock detail</a>
+        <a class="rbh-switch-3" href="">Search</a>
+        <a class="rbh-switch-3" href="">Collections list</a>
+        <div class="link-line-u"></div>
+      </nav>
+    </div>
+    <article>
+      <p class="tweet-txt">Following the launch of Collections, Robinhood customers began writing positive comments
+        about the new feature online:</p>
+    </article>
+
+    <div class="box flex justcenter tweet-box">
+      
+      <div id="tweet">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">In an ecosystem with a lot of noise, curation is invaluable. The new “Collections”
+            feature
+            on <a href="https://twitter.com/RobinhoodApp?ref_src=twsrc%5Etfw">@RobinhoodApp</a> is really cool for
+            discovery
+            and crafting a DIY investment strategy. <a href="https://t.co/B3b2Z5v5PA">pic.twitter.com/B3b2Z5v5PA</a></p>
+          &mdash; Jen Macchiarelli (@jenmacchiarelli) <a
+            href="https://twitter.com/jenmacchiarelli/status/999360299340845057?ref_src=twsrc%5Etfw">May 23, 2018</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+
+    </div>
+
+    <article>
+      <h2>Design process for solving user confidence</h2>
+      <p>Once this initial portion of the project was complete and we had launched Collections on iOS and Android, it
+        was
+        time
+        to begin thinking about how we can introduce education in order to help build user confidence; as outlined
+        earlier, this was the second core problem many churning users faced. </p>
+      <p>This process consisted of a combination of reading user research, analyzing products from other companies that
+        successfully
+        engage users during discovery, developing prototypes that attempt to help users learn more about investing, and
+        consolidating
+        learnings from feedback received on those prototyped ideas.</p>
+      <p>Unfortunately, this project was cut short due to the Collections portion of this project being re-scoped to
+        include additional features. With that said, our team learned a ton about how we can bring this
+        aspect of user education to discovery. </p>
+      <p>For example, one prototype that was well-received is an idea that teaches users, on the empty-state of search,
+        different
+        investment strategies that are common for other investors that have similar goals and investment experience.</p>
+    </article>
+    <div class="box">
+      <video class="mobile-video shadow" id="robinhood-video" autoplay muted loop>
+        <source src="../static/videos/robinhood-collections-discovery.mp4" type="video/mp4" >
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <article>
+      <p>Inspiration for these prototypes came from an earlier project I worked on at Robinhood where we came up with
+        a design that surfaces Collections on the homescreen of the web product, as shown below.</p>
+    </article>
+    <div class="box">
+      <img src="../static/img/robinhood/web-collections.png" alt="Web Collections Animation" class="shadow">
+    </div>
+    <article>
+      <h2>Key learnings and future improvements</h2>
+      <p>With much excitement, the first portion of this project of bringing Collections to iOS and Android was launched
+        in the
+        final few days I was at the company. This did, however, mean I was unable to see the impact Collections had on
+        metrics.
+      </p>
+      <p>Overall, internal feedback was positive and there was a feeling of enthusiasm to continue improving this area
+        of
+        the product.
+        I’m excited to see where the product goes in the future, especially in terms of improving user education and
+        evolving the way we help users to discover different ways to make money through investing.</p>
+
+        <h2>Want to learn more about this case study?</h2>
+        <div class="contact-text">
+          <p>Email me at <a class="default" href="mailto:daniel.mc.heintzman@gmail.com">daniel.mc.heintzman@gmail.com</a></p>
+        </div>
+    </article>
+
+    </div>
+  </main>
+  <footer class="case-study-footer">
+    <div class="m-scroll">
+      <a href="./facebook.html" class="case-link">
+        <video class="case-link-video" autoplay muted loop playsinline disablepictureinpicture disableremoteplayback>
+          <source src="../static/videos/facebook-account-recovery-desktop-link.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="case-link-overlay">
+          <div class="flex">
+            <img class="icon" src="../static/svg/facebook-logo.svg" alt="facebook icon">
+            <img class="icon" src="../static/svg/messenger-logo.svg" alt="messenger icon">
+          </div>
+          <h2>Facebook</h2>
+          <h4>Case Study: Account Recovery</h4>
+        </div>
+      </a>
+      <a href="./mailchimp.html" class="case-link">
+        <video class="case-link-video" autoplay muted loop playsinline disablepictureinpicture disableremoteplayback>
+          <source src="../static/videos/mailchimp-campaigns-link.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="case-link-overlay">
+          <img class="icon" src="../static/svg/mailchimp-logo.svg" alt="mailchimp icon">
+          <h2>Mailchimp</h2>
+          <h4>Case Study: Campaign Creation</h4>
+        </div>
+      </a>
+      <a href="./mailchimp-templates.html" class="case-link">
+        <video class="case-link-video" autoplay muted loop playsinline disablepictureinpicture disableremoteplayback>
+          <source src="../static/videos/mailchimp-templates-link.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="case-link-overlay">
+          <img class="icon" src="../static/svg/mailchimp-logo.svg" alt="mailchimp icon">
+          <h2>Mailchimp</h2>
+          <h4>Case Study: Templates</h4>
+        </div>
+      </a>
+    </div>
+  </footer>
+
+  <script src="../main.js" async defer></script>
+</body>
+
+</html>

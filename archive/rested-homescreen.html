@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <title>Daniel Heintzman</title>
+  <meta name="Resource-type" content="Document" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Daniel Heintzman" />
+  <meta property="og:description"
+    content="Former product design intern at Robinhood. Currently studying Systems Design Engineering at the University of Waterloo." />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Daniel Heintzman: Product Designer" />
+  <meta property="og:image" content="https://danielheintzman.com/img/open-graph/open-graph-rested.png" />
+  <meta property="og:url" content="https://danielheintzman.com/portfolio/rested-homescreen/index.html" />
+  <meta property="og:image:width" content="50" />
+  <meta property="og:image:height" content="50" />
+  <link href="../favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <!-- Google Analytics -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-90367920-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<html>
+
+<body>
+  <div id="whitescreen"></div>
+  <a href="../index.html" class="back-home-nav" title="Go back to homepage">Daniel Heintzman</a>
+  <header>
+    <h1>Rested</h1>
+    <p class="sub">Redesigning the homescreen to improve engagement</p>
+  </header>
+  <main>
+    <div class="box">
+      <img src="../static/img/archive/rested-homescreen/goal-header-2.jpg" alt="">
+    </div>
+    <article>
+      <h2>Background</h2>
+      <p class="sub">Rested allows people to diagnose and find treatment for their sleep issues</p>
+      <p>
+        Experts estimate 1 in 5 Americans suffer from sleep apnea. However, despite being more prevalent than diabetes and having serious ramifications on quality of life, more than 80% of sleep apnea patients go undiagnosed. Rested was founded to help this substantial set of people achieve healthier sleep through a completely new approach to screening, diagnosing &amp; treating sleep issues like sleep apnea. <br><br>During my internship at Rested, I worked on a variety of mobile and web projects. One impactful project I had the opportunity to work on, was redesigning the homescreen of Rested’s iOS app.
+      </p>
+      <h2>The Problem</h2>
+      <p class="sub">Our target users that had serious sleep issues were not motivated to seek treatment</p>
+      <p>
+        A core business problem that Rested was facing was that the cost to get users with a high risk for serious sleep issues to want to receive help from us was expensive and unsustainable. It was apparent there was a motivation gap for users to take action and stay committed towards improving their sleep issues. This was a problem for the business since those that did not take action were costing us money, and we needed to recoup those costs.
+      </p>
+      <h2>Objective</h2>
+      <p class="sub">We needed to close the motivation gap that was causing users to not take action and receive treatment</p>
+      <p>
+        By performing some user research, we found that some of the main reasons for this high cost of converting usersto treatment were:
+      </p>
+    </article>
+    <div class="box">
+      <img draggable="false" src="../static/img/archive/rested-homescreen/objective.png">
+    </div>
+    <article>
+      <h2>Current Design</h2>
+      <p class="sub">The existing design had a significant drop-off of users from the homescreen</p>
+      <p>
+        To get a deeper understanding of the problems with the current user experience, I analyzed the current flow users take from initial onboarding to receiving treatment. From this analysis, it became evident that the path for users to receive treatment was not the most optimal. While the current task flow seems logical, the journey for users to request treatment is long since users had to sleep one night with the app before requesting treatment.
+      </p>
+    </article>
+    <div class="box">
+      <img draggable="false" src="../static/img/archive/rested-homescreen/current-design.png">
+    </div>
+    <article>
+      <p>
+        In addition to this lengthy user task flow, from our user research a significant proportion of our users stop using the app from this home screen. I hypothesized that it was because there was little information on what value the user can expect from setting the alarm and recording their sleep.
+      </p>
+    </article>
+    <div class="box">
+      <img draggable="false" src="../static/img/archive/rested-homescreen/current-homescreen.png">
+    </div>
+    <article>
+      <p>
+        The biggest issue with the current signup process was the initial account creation screen. This screen is where the signup flow experienced the largest drop off. One hypothesis was that it was due to the confusing language and layout of this screen.
+      </p>
+      <h2>Market Research</h2>
+      <p class="sub">Learning about other successful behavior change apps helped inform my future design decisions</p>
+      <p>
+        After getting a good understanding of the problems and potential opportunities of the current design, I researched how other successful behavior change applications in the health industry motivate users to take action within their app.
+      </p>
+    </article>
+    <div class="box">
+      <img draggable="false" src="../static/img/archive/rested-homescreen/research.png">
+    </div>
+    <article>
+      <p>Some learnings I gained from researching existing behavior change applications in the health industry like the three above were:
+        <ul>
+          <li><p>Many of them incorporate a daily task list for users to come back and work on every day.</p></li>
+          <li><p>Existing apps also often provide a summary of results from the user’s previous days to motivate them to stay consistent with taking action.</p></li>
+        </ul>
+      </p>
+      <h2>User Research</h2>
+      <p class="sub">Understanding users mental model for health diagnosis</p>
+      <p>
+        Researching how successful health apps was helpful in providing insight into how users can pursue self-improvement through exercises. However, many sleep issues like sleep apnea cannot be cured with exercises alone but often times may require the use of medical equipment. It was therefore important to design a system that would provide users the opportunity to improve their sleep without giving them the false belief that their sleep issues could be cured. Therefore, I put researched how people intuitively expect to be treated for issues that can only be treated with professional help.
+      </p>
+    </article>
+    <div class="box">
+      <img draggable="false" src="../static/img/archive/rested-homescreen/user-research.png">
+    </div>
+    <article>
+      <h2>Low Fidelity Prototyping</h2>
+      <p class="sub">Exploring different concepts that follow this diagnosis model</p>
+      <p>
+        My next step was attempting to incorporate all the learnings I had made into a user interface that would make sense to the user and fulfill the goals of the project. I put together many iterations some of which are shown below.
+      </p>
+    </article>
+    <div class="box">
+      <img draggable="false" src="../static/img/archive/rested-homescreen/low-fidelity-prototyping.png">
+    </div>
+    <article>
+      <h2>Medium Fidelity Prototyping</h2>
+      <p class="sub">Iterating and combining and ideas from my initial sketches into wireframes</p>
+      <p>
+        I then translated some of the better initial ideas I had into more defined wireframes.
+      </p>
+    </article>
+    <div class="box">
+      <img draggable="false" src="../static/img/archive/rested-homescreen/medium-fidelity-prototyping.png">
+    </div>
+    <article>
+      <h2>High Fidelity Prototyping</h2>
+      <p class="sub">Feedback informed the design of the initial high-fidelity prototype</p>
+      <p>
+        After gathering feedback on the above wireframes, I noted down the ideas that resonated the most with others
+        on
+        the design
+        team and designed the high-fidelity prototype displayed below.
+      </p>
+    </article>
+    <div class="box">
+      <img draggable="false" src="../static/img/archive/rested-homescreen/high-fidelity-prototyping.png">
+    </div>
+    <article>
+      <p>
+        Some of the problems our team discussed with this design that were then iterated on were:
+        <ul>
+          <li><p>This design had a large proportion of the screen real-estate taken up by user’s sleep data which provides no action items for the user to move towards treatment.</p></li>
+          <li><p>The sleep data section also drew the user’s focus away from trying the sleep activities and scheduling a call with a sleep coach.</p></li>
+          <li><p>Finally, this list of activities did not provide enough detail to provide users the motivation to try each of the activities.</p></li>
+        </ul>
+      </p>
+      <h2>Final Design</h2>
+      <p class="sub">Collaborative feedback helped prioritize which information was most important in terms of hierarchy</p>
+      <p>
+        From the insights brought up in our design review of the high-fidelity prototype, I iterated on the design to make the most important more apparent on the homescreen. For example, this meant giving higher priority the description of each activity and lower priority the details in your sleep data.
+      </p>
+    </article>
+    <div class="box">
+      <img draggable="false" src="../static/img/archive/rested-homescreen/final-design.png">
+    </div>
+    <article>
+      <p>
+        After finalizing the homescreen, I defined a final flow for how the new homescreen would interact with the rest of the app. In addition, possible edge cases like what happens after a user completes an activity were defined.
+      </p>
+    </article>
+    <div class="box">
+      <img draggable="false" src="../static/img/archive/rested-homescreen/full-design.png">
+    </div>
+    <article>
+      <h2>Results</h2>
+      <p class="sub">Users became more convinced to move forward and address their sleep issues</p>
+      <p>
+        In the last month of my internship, the full design had been implemented and released to the App Store. From our release, we we’re able to see the impact the redesigned homescreen had on our users. From the redesign:
+        <ul>
+          <li><p>Our cost per opportunity had declined by 4x, from a 4x increase in the number of users wanting to talk to a sleep coach and receive help with their sleep issues.</p></li>
+          <li><p>Additionally, we hit a record of achieving the lowest cost per scheduled MD appointment ever at the company. Demonstrating users were much convinced to take action on their sleep issues.</p></li>
+        </ul>
+      </p>
+    </article>
+  </main>
+  <footer class="flex alcenter justcenter" >
+    <a href="../archive.html" title="Go back to archive" class="back-to-archive">Back to archive</a>
+  </footer>
+  <script src="../main.js" async defer></script>
+</body>
+
+</html>
